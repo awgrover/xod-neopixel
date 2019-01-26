@@ -1,0 +1,702 @@
+{
+  "description": "Use  example-rgb-revelation to discover the color-order.\nSet one of the 1-x's to true.\nSet one of  the 2-x's to true.\nThe third is deduced.",
+  "links": [
+    {
+      "id": "B13IVw8mE",
+      "input": {
+        "nodeId": "HJZ7GvLQV",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "rJqffw8Q4",
+        "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "B168SwIQ4",
+      "input": {
+        "nodeId": "ByS7Bv8QV",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "HJyWBvLQ4",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "B1DkSPLXV",
+      "input": {
+        "nodeId": "B1mhNv8mE",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "BkVy4v874",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "BJNkWSwI7E",
+      "input": {
+        "nodeId": "rJWJ-rP8m4",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "r1GJWBPIXE",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "BJSQhEDIXE",
+      "input": {
+        "nodeId": "B1mhNv8mE",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "H1WmhVwIXE",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "BJeEmwUQ4",
+      "input": {
+        "nodeId": "HJZ7GvLQV",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "SkQmmvU7E",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "Bkc14v8mN",
+      "input": {
+        "nodeId": "ryx4JVPIm4",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "SyWN8WDUQ4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BymHQSDLXN",
+      "input": {
+        "nodeId": "ByS7Bv8QV",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "BklrQHwUXV",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "H1MfHvL74",
+      "input": {
+        "nodeId": "ByxJZHD8mV",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "r1O7bvLQV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1Q6VvUmV",
+      "input": {
+        "nodeId": "BklQ34DUQV",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "BJNL-PUXE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJN4JVPUXN",
+      "input": {
+        "nodeId": "rkZNJEv8XN",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "SyGNy4vUQV",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "HJNSmSwUXE",
+      "input": {
+        "nodeId": "r1WHQHP8mV",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "S1GS7BP8X4",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "HJNZ8SDL74",
+      "input": {
+        "nodeId": "HyWZ8rw8QN",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "BkMbLHwL7E",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "HJVmhVDUXE",
+      "input": {
+        "nodeId": "H1WmhVwIXE",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "HyMXn4vLQV",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "HJlaEwUmE",
+      "input": {
+        "nodeId": "BklQ34DUQV",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "r1O7bvLQV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJrrQrv87E",
+      "input": {
+        "nodeId": "ByS7Bv8QV",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "r1WHQHP8mV",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "HkU5Bv8mV",
+      "input": {
+        "nodeId": "SybUBvIX4",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "ByS7Bv8QV",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "HkWXHvIXE",
+      "input": {
+        "nodeId": "HJyWBvLQ4",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "B1mhNv8mE",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "HkXyWSPLXN",
+      "input": {
+        "nodeId": "HJyWBvLQ4",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "ByxJZHD8mV",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "HkbOSD8Q4",
+      "input": {
+        "nodeId": "Byg-8SvLXE",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "Sk5NWwLX4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkdkNwImV",
+      "input": {
+        "nodeId": "ryx4JVPIm4",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "rkiG-vIXN",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkisrDIXV",
+      "input": {
+        "nodeId": "ByyorPI7N",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SybUBvIX4",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "HyQVkEPU7E",
+      "input": {
+        "nodeId": "BkVy4v874",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "ryx4JVPIm4",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "S1SzBvU7N",
+      "input": {
+        "nodeId": "ByxJZHD8mV",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "SyWN8WDUQ4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1X4rPL7V",
+      "input": {
+        "nodeId": "BklrQHwUXV",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "Sk5NWwLX4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJB-IBPU74",
+      "input": {
+        "nodeId": "SybUBvIX4",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "HyWZ8rw8QN",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "SJFXEPU7E",
+      "input": {
+        "nodeId": "BkVy4v874",
+        "pinKey": "r1AgIROHDJW"
+      },
+      "output": {
+        "nodeId": "HJZ7GvLQV",
+        "pinKey": "S13xLCuHvkW"
+      }
+    },
+    {
+      "id": "SkBJWBPIQ4",
+      "input": {
+        "nodeId": "HJyWBvLQ4",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "rJWJ-rP8m4",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "SkJ6Xv8XN",
+      "input": {
+        "nodeId": "HJZ7GvLQV",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "S1woQwLmE",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "SkLEBw8X4",
+      "input": {
+        "nodeId": "BklrQHwUXV",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "BJNL-PUXE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyEOHvUQN",
+      "input": {
+        "nodeId": "Byg-8SvLXE",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "r1l4IZw8QV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sym-UHPUm4",
+      "input": {
+        "nodeId": "SybUBvIX4",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "Byg-8SvLXE",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "SyrVJEwLmE",
+      "input": {
+        "nodeId": "BkVy4v874",
+        "pinKey": "ryTeUROHD1b"
+      },
+      "output": {
+        "nodeId": "rkZNJEv8XN",
+        "pinKey": "HkdQfO-JX"
+      }
+    },
+    {
+      "id": "r1QQ34DLQV",
+      "input": {
+        "nodeId": "B1mhNv8mE",
+        "pinKey": "S1yZIA_rDJZ"
+      },
+      "output": {
+        "nodeId": "BklQ34DUQV",
+        "pinKey": "B1gN80uHvk-"
+      }
+    },
+    {
+      "id": "rJThmwLmN",
+      "input": {
+        "nodeId": "S1woQwLmE",
+        "pinKey": "ByHXz_-1X"
+      },
+      "output": {
+        "nodeId": "Sk1nXv8m4",
+        "pinKey": "B23RV3eJq"
+      }
+    },
+    {
+      "id": "rJnQQwLXV",
+      "input": {
+        "nodeId": "SkQmmvU7E",
+        "pinKey": "r1bVLR_BPJW"
+      },
+      "output": {
+        "nodeId": "r1l4IZw8QV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryO7mDU7N",
+      "input": {
+        "nodeId": "SkQmmvU7E",
+        "pinKey": "SJMVU0urvkZ"
+      },
+      "output": {
+        "nodeId": "rkiG-vIXN",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1mhNv8mE",
+      "position": {
+        "x": 476,
+        "y": 408
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "description": "Set to true if the 2nd color is red",
+      "id": "BJNL-PUXE",
+      "label": "2-red",
+      "position": {
+        "x": 340,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "A4h"
+      },
+      "id": "BkMbLHwL7E",
+      "position": {
+        "x": 782,
+        "y": 714
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "id": "BkVy4v874",
+      "position": {
+        "x": 340,
+        "y": 306
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "id": "BklQ34DUQV",
+      "position": {
+        "x": 476,
+        "y": 306
+      },
+      "type": "xod/core/and"
+    },
+    {
+      "id": "BklrQHwUXV",
+      "position": {
+        "x": 748,
+        "y": 510
+      },
+      "type": "xod/core/and"
+    },
+    {
+      "id": "ByS7Bv8QV",
+      "position": {
+        "x": 748,
+        "y": 612
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "id": "Byg-8SvLXE",
+      "position": {
+        "x": 884,
+        "y": 612
+      },
+      "type": "xod/core/and"
+    },
+    {
+      "id": "ByxJZHD8mV",
+      "position": {
+        "x": 612,
+        "y": 408
+      },
+      "type": "xod/core/and"
+    },
+    {
+      "description": "color-order-code for the constructor's `t` input",
+      "id": "ByyorPI7N",
+      "label": "t",
+      "position": {
+        "x": 884,
+        "y": 816
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "H1WmhVwIXE",
+      "position": {
+        "x": 408,
+        "y": 408
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "id": "HJZ7GvLQV",
+      "position": {
+        "x": 204,
+        "y": 204
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "id": "HJyWBvLQ4",
+      "position": {
+        "x": 612,
+        "y": 510
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "52h"
+      },
+      "id": "HyMXn4vLQV",
+      "position": {
+        "x": 374,
+        "y": 408
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "id": "HyWZ8rw8QN",
+      "position": {
+        "x": 816,
+        "y": 714
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "58h"
+      },
+      "id": "S1GS7BP8X4",
+      "position": {
+        "x": 646,
+        "y": 612
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "id": "S1woQwLmE",
+      "position": {
+        "x": 136,
+        "y": 204
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "06h"
+      },
+      "id": "Sk1nXv8m4",
+      "position": {
+        "x": 102,
+        "y": 204
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "description": "Set to true if the 1st color is blue",
+      "id": "Sk5NWwLX4",
+      "label": "1-blue",
+      "position": {
+        "x": 272,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "SkQmmvU7E",
+      "position": {
+        "x": 204,
+        "y": 102
+      },
+      "type": "xod/core/and"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "09h"
+      },
+      "id": "SyGNy4vUQV",
+      "position": {
+        "x": 238,
+        "y": 306
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "description": "Set to true if the 2nd color is blue",
+      "id": "SyWN8WDUQ4",
+      "label": "2-blue",
+      "position": {
+        "x": 408,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "SybUBvIX4",
+      "position": {
+        "x": 884,
+        "y": 714
+      },
+      "type": "xod/core/if-else"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "A1h"
+      },
+      "id": "r1GJWBPIXE",
+      "position": {
+        "x": 510,
+        "y": 510
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "description": "Set to true if the 1st color is green",
+      "id": "r1O7bvLQV",
+      "label": "1-green",
+      "position": {
+        "x": 238,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "r1WHQHP8mV",
+      "position": {
+        "x": 680,
+        "y": 612
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "description": "Set to true if the 2nd color is green",
+      "id": "r1l4IZw8QV",
+      "label": "2-green",
+      "position": {
+        "x": 374,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "rJWJ-rP8m4",
+      "position": {
+        "x": 544,
+        "y": 510
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "id": "rJqffw8Q4",
+      "position": {
+        "x": 272,
+        "y": 102
+      },
+      "type": "xod/core/constant-number"
+    },
+    {
+      "id": "rkZNJEv8XN",
+      "position": {
+        "x": 272,
+        "y": 306
+      },
+      "type": "xod/bits/i8-to-number"
+    },
+    {
+      "description": "Set to true if the 1st color is red",
+      "id": "rkiG-vIXN",
+      "label": "1-red",
+      "position": {
+        "x": 204,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "ryx4JVPIm4",
+      "position": {
+        "x": 340,
+        "y": 204
+      },
+      "type": "xod/core/and"
+    }
+  ]
+}
