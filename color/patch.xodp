@@ -1,22 +1,21 @@
 {
-   "description" : "",
-   "nodes" : [
-      {
-         "id" : "cpp",
-         "position" : {
-            "y" : 102,
-            "x" : 68
-         },
-         "type" : "xod/patch-nodes/not-implemented-in-xod"
+  "nodes": [
+    {
+      "id": "cpp",
+      "position": {
+        "x": 68,
+        "y": 102
       },
-      {
-         "position" : {
-            "x" : 68,
-            "y" : 204
-         },
-         "type" : "xod/patch-nodes/output-number",
-         "label" : "val",
-         "id" : "o-val"
-      }
-   ]
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "o-val",
+      "label": "val",
+      "position": {
+        "x": 68,
+        "y": 204
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
 }

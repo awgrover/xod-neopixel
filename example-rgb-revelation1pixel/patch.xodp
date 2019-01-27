@@ -25,6 +25,18 @@
       }
     },
     {
+      "content": "You could adjust 'n' the number of pixels: >1\n'p' == 0 is nearest the Arduino",
+      "id": "BkVPTLoQN",
+      "position": {
+        "x": -68,
+        "y": 204
+      },
+      "size": {
+        "height": 51,
+        "width": 238
+      }
+    },
+    {
       "content": "BLUE",
       "id": "Bys3s7_EyE",
       "position": {
@@ -40,8 +52,8 @@
       "content": "Light up the first pixel in order: OFF, Red, Green, Blue.\nLike the 3 pixel revelation, but this only requires 1 pixel.\nThis should help you decode the right RGB code to use (e.g. GRB, etc).\nThis should do white as well, but it doesn't yet.\nAlso, it ignores pixels past the first, so they might have any/no color when this runs.",
       "id": "H1r-lNxOVJE",
       "position": {
-        "x": 0,
-        "y": 0
+        "x": -34,
+        "y": -204
       },
       "size": {
         "height": 153,
@@ -64,8 +76,8 @@
       "content": "Start with 6 in RGB node. Upload, and watch the first pixel.\nIt will go through 4 colors: Off, Red, Green, Blue.\nRecord the colors that actually show.\nIf they are Red, Green, Blue in order, then you have the right value in the RGB.\nIf not, then read off the colors and use the NEO_xxx that is the order you saw.\nMine shows as Green Red Blue, so NEO_GRB.\nUpload with that new value for the RGB node, should show as Red Green Blue when you get it right.",
       "id": "HJIZgVlOVyN",
       "position": {
-        "x": 136,
-        "y": 204
+        "x": -34,
+        "y": -102
       },
       "size": {
         "height": 153,
@@ -121,6 +133,18 @@
       }
     },
     {
+      "content": "You chould use the actual hex value if you know it. e.g. for GRWB, etc.",
+      "id": "rk7MgwoXN",
+      "position": {
+        "x": 578,
+        "y": 204
+      },
+      "size": {
+        "height": 51,
+        "width": 340
+      }
+    },
+    {
       "content": "Wait after showing",
       "id": "ryFbxVeONkN",
       "position": {
@@ -133,27 +157,27 @@
       }
     },
     {
-      "content": "You should adjust 'p' the pin.\nYou could adjust 'n' the number of pixels: >1",
+      "content": "You should adjust 'p' the pin.\n",
       "id": "ryOblNgdV1N",
       "position": {
-        "x": 68,
+        "x": 34,
         "y": 102
       },
       "size": {
         "height": 51,
-        "width": 238
+        "width": 136
       }
     },
     {
-      "content": "'p' == 0 is nearest the Arduino",
+      "content": "Hook the true to the first color that shows, and the second: that's the setting for \"t\"",
       "id": "ryPWlExdNJ4",
       "position": {
-        "x": 374,
-        "y": 408
+        "x": 408,
+        "y": 102
       },
       "size": {
         "height": 51,
-        "width": 238
+        "width": 340
       }
     }
   ],
@@ -212,6 +236,17 @@
       "output": {
         "nodeId": "HJExVxu4kN",
         "pinKey": "o-done"
+      }
+    },
+    {
+      "id": "BJb5NpIimV",
+      "input": {
+        "nodeId": "rk5N6IsmN",
+        "pinKey": "rkiG-vIXN"
+      },
+      "output": {
+        "nodeId": "Syx5EaUi7V",
+        "pinKey": "VAL"
       }
     },
     {
@@ -344,17 +379,6 @@
       "output": {
         "nodeId": "SkXeNguV1V",
         "pinKey": "o-adafruitneopixel"
-      }
-    },
-    {
-      "id": "HyFia-7gE",
-      "input": {
-        "nodeId": "SkXeNguV1V",
-        "pinKey": "i-t"
-      },
-      "output": {
-        "nodeId": "rJHeVlON1V",
-        "pinKey": "B1x2RV3eZ"
       }
     },
     {
@@ -622,6 +646,17 @@
       }
     },
     {
+      "id": "rJz9NpIsXV",
+      "input": {
+        "nodeId": "rk5N6IsmN",
+        "pinKey": "r1l4IZw8QV"
+      },
+      "output": {
+        "nodeId": "Syx5EaUi7V",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "rk49W_VJ4",
       "input": {
         "nodeId": "r1PFWdNJV",
@@ -630,6 +665,17 @@
       "output": {
         "nodeId": "BJFxVx_NJV",
         "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "rkEU68j7V",
+      "input": {
+        "nodeId": "SkXeNguV1V",
+        "pinKey": "i-t"
+      },
+      "output": {
+        "nodeId": "rk5N6IsmN",
+        "pinKey": "ByyorPI7N"
       }
     },
     {
@@ -686,7 +732,7 @@
       },
       "id": "BJFxVx_NJV",
       "position": {
-        "x": 238,
+        "x": 408,
         "y": 408
       },
       "type": "xod/core/constant-number"
@@ -714,8 +760,8 @@
     {
       "id": "HJExVxu4kN",
       "position": {
-        "x": -1,
-        "y": 407
+        "x": 170,
+        "y": 408
       },
       "type": "@/begin"
     },
@@ -768,7 +814,7 @@
       "id": "HypIFmQgN",
       "label": "START",
       "position": {
-        "x": 34,
+        "x": 204,
         "y": 510
       },
       "type": "xod/patch-nodes/to-bus"
@@ -850,8 +896,8 @@
       },
       "id": "SkXeNguV1V",
       "position": {
-        "x": -1,
-        "y": 305
+        "x": 170,
+        "y": 306
       },
       "type": "@/adafruitneopixel"
     },
@@ -876,7 +922,7 @@
       "id": "Sy5TpbXeE",
       "label": "neopixel",
       "position": {
-        "x": 0,
+        "x": 170,
         "y": 510
       },
       "type": "xod/patch-nodes/to-bus"
@@ -895,7 +941,7 @@
       },
       "id": "SyUx4l_NJ4",
       "position": {
-        "x": 34,
+        "x": 204,
         "y": 102
       },
       "type": "xod/core/constant-number"
@@ -911,11 +957,22 @@
     },
     {
       "boundLiterals": {
+        "VAL": "True"
+      },
+      "id": "Syx5EaUi7V",
+      "position": {
+        "x": 306,
+        "y": 102
+      },
+      "type": "xod/core/constant-boolean"
+    },
+    {
+      "boundLiterals": {
         "B1x2RV3eZ": "1"
       },
       "id": "r1GxNxOV1E",
       "position": {
-        "x": 0,
+        "x": 170,
         "y": 204
       },
       "type": "xod/core/constant-number"
@@ -936,7 +993,7 @@
       "id": "r1PFWdNJV",
       "label": "pix0",
       "position": {
-        "x": 238,
+        "x": 408,
         "y": 510
       },
       "type": "xod/patch-nodes/to-bus"
@@ -948,7 +1005,7 @@
       "description": "neopixels can be painfully bright.\npick a reasonable number.",
       "id": "rJ9xVl_E1E",
       "position": {
-        "x": 306,
+        "x": 476,
         "y": 408
       },
       "type": "xod/core/constant-number"
@@ -968,7 +1025,7 @@
       "id": "rJHeVlON1V",
       "label": "RGB",
       "position": {
-        "x": 102,
+        "x": 510,
         "y": 204
       },
       "type": "xod/core/constant-number"
@@ -977,7 +1034,7 @@
       "id": "rJ_rf_NkE",
       "label": "ontime",
       "position": {
-        "x": 272,
+        "x": 442,
         "y": 510
       },
       "type": "xod/patch-nodes/to-bus"
@@ -1003,12 +1060,20 @@
       "type": "@/set-pixel-color"
     },
     {
+      "id": "rk5N6IsmN",
+      "position": {
+        "x": 272,
+        "y": 204
+      },
+      "type": "awgrover/adafruit-neopixel-ll/color-order"
+    },
+    {
       "boundLiterals": {
         "B1x2RV3eZ": "1.5"
       },
       "id": "rk6GGdE14",
       "position": {
-        "x": 272,
+        "x": 442,
         "y": 408
       },
       "type": "xod/core/constant-number"
@@ -1042,7 +1107,7 @@
       "id": "rypDzu4yE",
       "label": "brightness",
       "position": {
-        "x": 306,
+        "x": 476,
         "y": 510
       },
       "type": "xod/patch-nodes/to-bus"
