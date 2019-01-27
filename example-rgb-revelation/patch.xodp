@@ -1,11 +1,23 @@
 {
   "comments": [
     {
+      "content": "Hook the true to the first color that shows, and the second: that's the setting for \"t\"",
+      "id": "BkBqgfDiQ4",
+      "position": {
+        "x": -102,
+        "y": 204
+      },
+      "size": {
+        "height": 51,
+        "width": 340
+      }
+    },
+    {
       "content": "Light up the first 3 pixels in Red, Green, Blue order.\nNearest the Arduino should be Red, then Green, then Blue.\nThis should help you decode the right RGB code to use (e.g. GRB, etc).\nThis should do white as well, but it doesn't yet.\nAlso, it ignores pixels past the 3rd, so they might have any/no color when this runs.",
       "id": "BknKSD4yE",
       "position": {
         "x": -340,
-        "y": 102
+        "y": 0
       },
       "size": {
         "height": 153,
@@ -13,15 +25,39 @@
       }
     },
     {
-      "content": "Start with 6 in RGB node. Upload, and look at the pixels.\nIf they are Red, Green, Blue in order, then you have the right value in the RGB.\nIf not, then read off the colors and use the NEO_xxx that is the order shown.\nMine shows as Green Red Blue, so NEO_GRB.\nUpload with that, should show as Red Green Blue when you get it right.",
-      "id": "Hy8gpvVyN",
+      "content": "At least 3 pixels, more is OK",
+      "id": "Byt1VDsXE",
       "position": {
-        "x": -238,
+        "x": -510,
         "y": 306
       },
       "size": {
+        "height": 51,
+        "width": 170
+      }
+    },
+    {
+      "content": "You chould use the actual hex value if you know it. e.g. for GRWB, etc.",
+      "id": "HJVqeGPomN",
+      "position": {
+        "x": 0,
+        "y": 306
+      },
+      "size": {
+        "height": 51,
+        "width": 272
+      }
+    },
+    {
+      "content": "Start with RGB as the order. Upload this sketch, and look at the pixels.\nIf they are Red, Green, Blue in order, then you have the color-order: RGB.\nIf not, then read off the colors and change where the True hooks too.\nMine shows as Green Red Blue, so 1-green, 2-red.\nUpload with that, should show as Red Green Blue when you get it right.",
+      "id": "Hy8gpvVyN",
+      "position": {
+        "x": -238,
+        "y": 102
+      },
+      "size": {
         "height": 153,
-        "width": 680
+        "width": 612
       }
     },
     {
@@ -49,15 +85,15 @@
       }
     },
     {
-      "content": "You should adjust 'p' the pin.\nYou could adjust 'n' the number of pixels: >3",
+      "content": "You should adjust 'p' the pin to the NeoPixel Data-In",
       "id": "Skkv_DEy4",
       "position": {
-        "x": -340,
+        "x": -510,
         "y": 204
       },
       "size": {
         "height": 51,
-        "width": 238
+        "width": 170
       }
     }
   ],
@@ -240,6 +276,17 @@
       }
     },
     {
+      "id": "SJf9lGwomN",
+      "input": {
+        "nodeId": "H1-5efDjQN",
+        "pinKey": "rkiG-vIXN"
+      },
+      "output": {
+        "nodeId": "rJ5lMPoXE",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "Sk78ibXg4",
       "input": {
         "nodeId": "rymGDPNk4",
@@ -248,17 +295,6 @@
       "output": {
         "nodeId": "ry-08PEJ4",
         "pinKey": "o-dev"
-      }
-    },
-    {
-      "id": "SkGRjWmlE",
-      "input": {
-        "nodeId": "HyNcu8EyV",
-        "pinKey": "i-t"
-      },
-      "output": {
-        "nodeId": "S1SsHw4kE",
-        "pinKey": "B1x2RV3eZ"
       }
     },
     {
@@ -273,6 +309,17 @@
       }
     },
     {
+      "id": "Sy75ezvimN",
+      "input": {
+        "nodeId": "H1-5efDjQN",
+        "pinKey": "r1l4IZw8QV"
+      },
+      "output": {
+        "nodeId": "rJ5lMPoXE",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "Sylxo-XlN",
       "input": {
         "nodeId": "ry-08PEJ4",
@@ -281,6 +328,17 @@
       "output": {
         "nodeId": "Skw1oW7eN",
         "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1BMzDjXN",
+      "input": {
+        "nodeId": "HyNcu8EyV",
+        "pinKey": "i-t"
+      },
+      "output": {
+        "nodeId": "H1-5efDjQN",
+        "pinKey": "ByyorPI7N"
       }
     },
     {
@@ -342,6 +400,18 @@
   "nodes": [
     {
       "boundLiterals": {
+        "B1x2RV3eZ": "6"
+      },
+      "id": "B1gqgzws74",
+      "label": "RGB",
+      "position": {
+        "x": -34,
+        "y": 306
+      },
+      "type": "xod/core/constant-number"
+    },
+    {
+      "boundLiterals": {
         "Skre8ROSv1-": "0.001"
       },
       "id": "BJ9sDPVk4",
@@ -359,6 +429,14 @@
         "y": 918
       },
       "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "H1-5efDjQN",
+      "position": {
+        "x": -272,
+        "y": 306
+      },
+      "type": "@/color-order"
     },
     {
       "boundLiterals": {
@@ -407,22 +485,10 @@
       "boundLiterals": {
         "B1x2RV3eZ": "6"
       },
-      "id": "S1SsHw4kE",
-      "label": "RGB",
-      "position": {
-        "x": -272,
-        "y": 306
-      },
-      "type": "xod/core/constant-number"
-    },
-    {
-      "boundLiterals": {
-        "B1x2RV3eZ": "6"
-      },
       "id": "SJfiBPN1E",
       "position": {
         "x": -306,
-        "y": 306
+        "y": 204
       },
       "type": "xod/core/constant-number"
     },
@@ -488,6 +554,17 @@
         "y": 918
       },
       "type": "@/show"
+    },
+    {
+      "boundLiterals": {
+        "VAL": "True"
+      },
+      "id": "rJ5lMPoXE",
+      "position": {
+        "x": -204,
+        "y": 204
+      },
+      "type": "xod/core/constant-boolean"
     },
     {
       "boundLiterals": {

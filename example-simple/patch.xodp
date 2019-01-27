@@ -61,11 +61,23 @@
       }
     },
     {
+      "content": "Hook the true to the first color that shows, and the second: that's the setting for \"t\"",
+      "id": "H18j0NPi7N",
+      "position": {
+        "x": -136,
+        "y": -204
+      },
+      "size": {
+        "height": 51,
+        "width": 340
+      }
+    },
+    {
       "content": "\"slowness\" how long each step of the pattern takes",
       "id": "H1DQjYE1E",
       "position": {
         "x": -238,
-        "y": -102
+        "y": 0
       },
       "size": {
         "height": 51,
@@ -94,6 +106,18 @@
       "size": {
         "height": 51,
         "width": 170
+      }
+    },
+    {
+      "content": "You chould use the actual hex value if you know it. e.g. for GRWB, etc.",
+      "id": "HkBoAVPsQE",
+      "position": {
+        "x": 34,
+        "y": -102
+      },
+      "size": {
+        "height": 51,
+        "width": 272
       }
     },
     {
@@ -160,8 +184,8 @@
       "content": "You may have to set RGB to the right value. See the \"revelation\" examples to help you.",
       "id": "SJUK_tNJV",
       "position": {
-        "x": -238,
-        "y": -204
+        "x": 136,
+        "y": 102
       },
       "size": {
         "height": 51,
@@ -490,6 +514,17 @@
       }
     },
     {
+      "id": "HymiANvsXN",
+      "input": {
+        "nodeId": "S1-jCEPjmV",
+        "pinKey": "r1l4IZw8QV"
+      },
+      "output": {
+        "nodeId": "BJsANPsXE",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "S1-glbmgV",
       "input": {
         "nodeId": "H1oyeWQgE",
@@ -498,6 +533,17 @@
       "output": {
         "nodeId": "SJjpyZXxE",
         "pinKey": "H17p94tiZ"
+      }
+    },
+    {
+      "id": "S1EyrDiQN",
+      "input": {
+        "nodeId": "BkA32K4kV",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1-jCEPjmV",
+        "pinKey": "ByyorPI7N"
       }
     },
     {
@@ -666,17 +712,6 @@
       }
     },
     {
-      "id": "r1gAnhtEkN",
-      "input": {
-        "nodeId": "BkA32K4kV",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "SJ1wuFVJV",
-        "pinKey": "B1x2RV3eZ"
-      }
-    },
-    {
       "id": "rJlxxJ5E1V",
       "input": {
         "nodeId": "ryegycVyE",
@@ -685,6 +720,17 @@
       "output": {
         "nodeId": "B1FRRFVJ4",
         "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "rJzsCNvj7N",
+      "input": {
+        "nodeId": "S1-jCEPjmV",
+        "pinKey": "rkiG-vIXN"
+      },
+      "output": {
+        "nodeId": "BJsANPsXE",
+        "pinKey": "VAL"
       }
     },
     {
@@ -780,6 +826,17 @@
       "type": "xod/core/count"
     },
     {
+      "boundLiterals": {
+        "VAL": "True"
+      },
+      "id": "BJsANPsXE",
+      "position": {
+        "x": -170,
+        "y": -204
+      },
+      "type": "xod/core/constant-boolean"
+    },
+    {
       "id": "Bk7IyiNkE",
       "position": {
         "x": -272,
@@ -792,7 +849,7 @@
       "label": "neoRGB",
       "position": {
         "x": -306,
-        "y": -204
+        "y": -102
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -930,6 +987,14 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
+      "id": "S1-jCEPjmV",
+      "position": {
+        "x": -238,
+        "y": -102
+      },
+      "type": "@/color-order"
+    },
+    {
       "id": "S1RZOY4JE",
       "position": {
         "x": -272,
@@ -944,8 +1009,8 @@
       "id": "SJ1wuFVJV",
       "label": "RGB",
       "position": {
-        "x": -272,
-        "y": -204
+        "x": 0,
+        "y": 102
       },
       "type": "xod/core/constant-number"
     },
@@ -1019,12 +1084,24 @@
     },
     {
       "boundLiterals": {
+        "B1x2RV3eZ": "6"
+      },
+      "id": "r1ejCNvjXV",
+      "label": "RGB",
+      "position": {
+        "x": 0,
+        "y": -102
+      },
+      "type": "xod/core/constant-number"
+    },
+    {
+      "boundLiterals": {
         "B1x2RV3eZ": "0.3"
       },
       "id": "r1q39YVkE",
       "position": {
         "x": -272,
-        "y": -102
+        "y": 0
       },
       "type": "xod/core/constant-number"
     },
@@ -1104,7 +1181,7 @@
       "label": "sec/pixel",
       "position": {
         "x": -306,
-        "y": -102
+        "y": 0
       },
       "type": "xod/patch-nodes/to-bus"
     },
