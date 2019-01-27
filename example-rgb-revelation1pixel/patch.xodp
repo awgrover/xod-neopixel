@@ -239,17 +239,6 @@
       }
     },
     {
-      "id": "BJb5NpIimV",
-      "input": {
-        "nodeId": "rk5N6IsmN",
-        "pinKey": "rkiG-vIXN"
-      },
-      "output": {
-        "nodeId": "Syx5EaUi7V",
-        "pinKey": "VAL"
-      }
-    },
-    {
       "id": "BkTXBX7eV",
       "input": {
         "nodeId": "Sy5TpbXeE",
@@ -525,6 +514,17 @@
       }
     },
     {
+      "id": "SkB2WPoQV",
+      "input": {
+        "nodeId": "B10obvoXV",
+        "pinKey": "rkiG-vIXN"
+      },
+      "output": {
+        "nodeId": "Syx5EaUi7V",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "SkE0RZmgV",
       "input": {
         "nodeId": "HyZjrXOV1N",
@@ -566,6 +566,17 @@
       "output": {
         "nodeId": "rk6GGdE14",
         "pinKey": "B1x2RV3eZ"
+      }
+    },
+    {
+      "id": "Sy3hZviQV",
+      "input": {
+        "nodeId": "SkXeNguV1V",
+        "pinKey": "i-t"
+      },
+      "output": {
+        "nodeId": "B10obvoXV",
+        "pinKey": "ByyorPI7N"
       }
     },
     {
@@ -624,6 +635,17 @@
       }
     },
     {
+      "id": "r1w2ZvomE",
+      "input": {
+        "nodeId": "B10obvoXV",
+        "pinKey": "r1l4IZw8QV"
+      },
+      "output": {
+        "nodeId": "Syx5EaUi7V",
+        "pinKey": "VAL"
+      }
+    },
+    {
       "id": "rJd3TZQeV",
       "input": {
         "nodeId": "HJExVxu4kN",
@@ -646,17 +668,6 @@
       }
     },
     {
-      "id": "rJz9NpIsXV",
-      "input": {
-        "nodeId": "rk5N6IsmN",
-        "pinKey": "r1l4IZw8QV"
-      },
-      "output": {
-        "nodeId": "Syx5EaUi7V",
-        "pinKey": "VAL"
-      }
-    },
-    {
       "id": "rk49W_VJ4",
       "input": {
         "nodeId": "r1PFWdNJV",
@@ -665,17 +676,6 @@
       "output": {
         "nodeId": "BJFxVx_NJV",
         "pinKey": "B1x2RV3eZ"
-      }
-    },
-    {
-      "id": "rkEU68j7V",
-      "input": {
-        "nodeId": "SkXeNguV1V",
-        "pinKey": "i-t"
-      },
-      "output": {
-        "nodeId": "rk5N6IsmN",
-        "pinKey": "ByyorPI7N"
       }
     },
     {
@@ -691,6 +691,14 @@
     }
   ],
   "nodes": [
+    {
+      "id": "B10obvoXV",
+      "position": {
+        "x": 238,
+        "y": 204
+      },
+      "type": "@/color-order"
+    },
     {
       "id": "B1DHqXXlE",
       "position": {
@@ -1058,14 +1066,6 @@
         "y": 918
       },
       "type": "@/set-pixel-color"
-    },
-    {
-      "id": "rk5N6IsmN",
-      "position": {
-        "x": 272,
-        "y": 204
-      },
-      "type": "awgrover/adafruit-neopixel-ll/color-order"
     },
     {
       "boundLiterals": {
