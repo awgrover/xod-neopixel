@@ -1,0 +1,49 @@
+{
+  "description": "Get red, green, blue elements of rgb color",
+  "nodes": [
+    {
+      "id": "B1Ro1VmN4",
+      "position": {
+        "x": 204,
+        "y": 102
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "H16Y1VQVV",
+      "label": "red",
+      "position": {
+        "x": 204,
+        "y": 204
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "SJdqk4QNE",
+      "label": "green",
+      "position": {
+        "x": 238,
+        "y": 204
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "SkVY1N7E4",
+      "label": "rgb",
+      "position": {
+        "x": 204,
+        "y": 0
+      },
+      "type": "@/input-rgb-color"
+    },
+    {
+      "id": "rJlu51NX4E",
+      "label": "blue",
+      "position": {
+        "x": 272,
+        "y": 204
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
+}
