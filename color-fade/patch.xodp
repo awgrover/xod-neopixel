@@ -1,0 +1,138 @@
+{
+  "description": "`val` over the range maps to brightness the color.\n",
+  "links": [
+    {
+      "id": "B10fbVmV4",
+      "input": {
+        "nodeId": "rymrxEmEV",
+        "pinKey": "HJCWLAdSwyW"
+      },
+      "output": {
+        "nodeId": "rkD3RmXNN",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJTw-VmNV",
+      "input": {
+        "nodeId": "SyrL-4XEN",
+        "pinKey": "HyNSJVmEV"
+      },
+      "output": {
+        "nodeId": "SJyOCXQV4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bk6G-EXVV",
+      "input": {
+        "nodeId": "rymrxEmEV",
+        "pinKey": "ry1z8CuBDy-"
+      },
+      "output": {
+        "nodeId": "ryU3CQQVE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJxmZNQV4",
+      "input": {
+        "nodeId": "rymrxEmEV",
+        "pinKey": "BJlzICOSv1-"
+      },
+      "output": {
+        "nodeId": "ryPjR7mE4",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rk3R19mNV",
+      "input": {
+        "nodeId": "SyrL-4XEN",
+        "pinKey": "HJyLkE7NE"
+      },
+      "output": {
+        "nodeId": "rymrxEmEV",
+        "pinKey": "H12bIR_SPyZ"
+      }
+    },
+    {
+      "id": "rk6XY4X4V",
+      "input": {
+        "nodeId": "S1dMYV744",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SyrL-4XEN",
+        "pinKey": "B1281V7V4"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "S1dMYV744",
+      "label": "faded",
+      "position": {
+        "x": 306,
+        "y": 306
+      },
+      "type": "@/output-rgb-color"
+    },
+    {
+      "id": "SJyOCXQV4",
+      "label": "rgb",
+      "position": {
+        "x": 306,
+        "y": 0
+      },
+      "type": "@/input-rgb-color"
+    },
+    {
+      "id": "SyrL-4XEN",
+      "position": {
+        "x": 306,
+        "y": 204
+      },
+      "type": "@/brightness"
+    },
+    {
+      "id": "rkD3RmXNN",
+      "label": "max-v",
+      "position": {
+        "x": 170,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ryPjR7mE4",
+      "label": "val",
+      "position": {
+        "x": 102,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ryU3CQQVE",
+      "label": "min-v",
+      "position": {
+        "x": 136,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "rkpbU0OrwyZ": "1"
+      },
+      "id": "rymrxEmEV",
+      "label": "map to 0..1",
+      "position": {
+        "x": 102,
+        "y": 102
+      },
+      "type": "xod/math/map"
+    }
+  ]
+}

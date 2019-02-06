@@ -1,0 +1,35 @@
+{
+  "description": "convenience color: off",
+  "links": [
+    {
+      "id": "SJo-g_74V",
+      "input": {
+        "nodeId": "r1cZx_X4E",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SyHWeO74N",
+        "pinKey": "BkH0hm7NV"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "SyHWeO74N",
+      "position": {
+        "x": 204,
+        "y": 102
+      },
+      "type": "@/rgb-color"
+    },
+    {
+      "id": "r1cZx_X4E",
+      "label": "off",
+      "position": {
+        "x": 204,
+        "y": 204
+      },
+      "type": "@/output-rgb-color"
+    }
+  ]
+}
