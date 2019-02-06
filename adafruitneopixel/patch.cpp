@@ -17,7 +17,7 @@ using Type = Adafruit_NeoPixel*; // 'Type' is assumed by xod code-generator
 
 void evaluate(Context ctx) {
   // It should be evaluated only once on the first (setup) transaction
-  if (!isSettingUp()) return; // FIXME: relax this?
+  if (! (isInputDirty<input_n>(ctx) && isInputDirty<input_p>(ctx) && isInputDirty<input_t>(ctx)) )  return;
 
   auto state = getState(ctx);
 
