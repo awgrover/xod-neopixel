@@ -1,0 +1,49 @@
+{
+  "description": "composite rgb+white object\n0..1 values\n_a rgbw should auto calculate w_",
+  "nodes": [
+    {
+      "id": "BkH0hm7NV",
+      "label": "color",
+      "position": {
+        "x": 170,
+        "y": 204
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "id": "ByEshmQ4V",
+      "label": "green",
+      "position": {
+        "x": 170,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "HJBs3XmNE",
+      "label": "blue",
+      "position": {
+        "x": 204,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "HJ_p3Q7NN",
+      "position": {
+        "x": 170,
+        "y": 102
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "SJT8n7mEE",
+      "label": "red",
+      "position": {
+        "x": 136,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
+}
