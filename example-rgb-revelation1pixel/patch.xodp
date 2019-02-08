@@ -754,7 +754,7 @@
         "x": 850,
         "y": 918
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "BJZ6Pf_V1V",
@@ -808,7 +808,7 @@
         "x": 544,
         "y": 918
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "Hyl3s7_V1V",
@@ -1065,7 +1065,7 @@
         "x": 238,
         "y": 918
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "boundLiterals": {

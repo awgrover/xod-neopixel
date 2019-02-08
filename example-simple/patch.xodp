@@ -884,7 +884,7 @@
         "x": 68,
         "y": 2244
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "H1OnS9Vy4",

@@ -545,7 +545,7 @@
         "x": 0,
         "y": 816
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "r1yRPDNkE",
@@ -594,7 +594,7 @@
         "x": 0,
         "y": 612
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "ryCW9-Qe4",
@@ -623,7 +623,7 @@
         "x": 0,
         "y": 714
       },
-      "type": "@/set-pixel-color"
+      "type": "@/set-pixel-color-rgb"
     }
   ]
 }
