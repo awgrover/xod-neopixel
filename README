@@ -1,5 +1,23 @@
-Arduino library for controlling single-wire-based LED pixels and strip.
+XOD library for controlling single-wire-based LED pixels and strip ("Neopixels").
 
 Mechanically converted by https://forum.xod.io/u/awgrover using github.com:awgrover/arduino-2-xod from:
-Adafruit NeoPixel (Adafruit_NeoPixel) by Adafruit. Version 1.1.7
+Adafruit NeoPixel (Adafruit_NeoPixel) by Adafruit. Version 1.1.7. I think this is working with the version 1.10.4, and should work with later 1.x versions.
 https://github.com/adafruit/Adafruit_NeoPixel
+
+With some examples, and XOD utility nodes (like "if-else", "equal", etc.).
+
+Install using the standard XOD library installation process. This library is published as: awgrover/adafruitneopixel ( https://xod.io/libs/awgrover/adafruitneopixel/ ). There are a couple of other XOD neopixel libraries written by other people.
+
+Look at the Adafruit tutorials (for "Arduino", not CircuitPython). Each node in this library is from the Adafruit library, so look for the same node-name as you see in the Arduino code examples. Also look at the Adafruit examples (https://github.com/adafruit/Adafruit_NeoPixel/tree/master/examples), which you'll have to translate to XOD style (again, the methods should have the same name as the nodes in this library). I did translate "example simple", so try to use that as a guide.
+
+I provided a "color-order" node to configure the RGB order (the "t" input). It is probably easier to use than the "NEO_..." values in the Adafruit examples.
+
+To get started:
+
+Start a project and then:
+* If you have at least 3 neopixels, right-click on `example-rgb-revelation` and "clone to my project".
+* If you have less than 3 neopixels, right-click on 'example-rgb-revelation1pixel` and "clone to my project".
+
+Then read the comments and make adjustments as directed.
+
+I have a fairly decent record of responding on the XOD forums: https://forum.xod.io

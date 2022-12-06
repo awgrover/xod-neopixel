@@ -1,103 +1,133 @@
 {
   "comments": [
     {
-      "content": "Hook the true to the first color that shows, and the second: that's the setting for \"t\"",
+      "content": "Hook up according to the colors that showed on the first trial:\nSet one of the 1-x's to true. Set one of the 2-x's to true. \nThe third is deduced.",
       "id": "BkBqgfDiQ4",
       "position": {
-        "x": -102,
-        "y": 204
+        "units": "slots",
+        "x": -3,
+        "y": 2
       },
       "size": {
-        "height": 51,
-        "width": 340
+        "height": 1,
+        "units": "slots",
+        "width": 11
       }
     },
     {
-      "content": "Light up the first 3 pixels in Red, Green, Blue order.\nNearest the Arduino should be Red, then Green, then Blue.\nThis should help you decode the right RGB code to use (e.g. GRB, etc).\nThis should do white as well, but it doesn't yet.\nAlso, it ignores pixels past the 3rd, so they might have any/no color when this runs.",
+      "content": "Helps you figure out the correct RGB-order setting (\"color-order\" node).\nBy showing 3 colors, in order, on the first 3 pixels.\nFollow instructions below.",
       "id": "BknKSD4yE",
       "position": {
-        "x": -340,
-        "y": 0
+        "units": "slots",
+        "x": -10,
+        "y": -2
       },
       "size": {
-        "height": 153,
-        "width": 714
+        "height": 1,
+        "units": "slots",
+        "width": 14
       }
     },
     {
-      "content": "At least 3 pixels, more is OK",
+      "content": "At least 3 pixels, more is OK, but has no effect.\nThe first pixel (0) is nearest the Arduino",
       "id": "Byt1VDsXE",
       "position": {
-        "x": -510,
-        "y": 306
+        "units": "slots",
+        "x": -18,
+        "y": 3
       },
       "size": {
-        "height": 51,
-        "width": 170
+        "height": 1,
+        "units": "slots",
+        "width": 8
       }
     },
     {
       "content": "You chould use the actual hex value if you know it. e.g. for GRWB, etc.",
       "id": "HJVqeGPomN",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 306
+        "y": 3
       },
       "size": {
-        "height": 51,
-        "width": 272
+        "height": 1,
+        "units": "slots",
+        "width": 7
       }
     },
     {
-      "content": "Start with RGB as the order. Upload this sketch, and look at the pixels.\nIf they are Red, Green, Blue in order, then you have the color-order: RGB.\nIf not, then read off the colors and change where the True hooks too.\nMine shows as Green Red Blue, so 1-green, 2-red.\nUpload with that, should show as Red Green Blue when you get it right.",
-      "id": "Hy8gpvVyN",
-      "position": {
-        "x": -238,
-        "y": 102
-      },
-      "size": {
-        "height": 153,
-        "width": 612
-      }
-    },
-    {
-      "content": "'p' == 0 is nearest the Arduino",
+      "content": "'n' == 0 is nearest the Arduino",
       "id": "S1JqAwVk4",
       "position": {
-        "x": 204,
-        "y": 612
+        "units": "slots",
+        "x": 6,
+        "y": 6
       },
       "size": {
-        "height": 51,
-        "width": 238
+        "height": 1,
+        "units": "slots",
+        "width": 4
       }
     },
     {
       "content": "delay turns them off for a moment",
       "id": "S1zeNzXl4",
       "position": {
-        "x": -204,
-        "y": 714
+        "units": "slots",
+        "x": -6,
+        "y": 7
       },
       "size": {
-        "height": 51,
-        "width": 136
+        "height": 1,
+        "units": "slots",
+        "width": 4
       }
     },
     {
-      "content": "You should adjust 'p' the pin to the NeoPixel Data-In",
+      "content": "You should adjust 'p', the pin to the NeoPixel Data-In",
       "id": "Skkv_DEy4",
       "position": {
-        "x": -510,
-        "y": 204
+        "units": "slots",
+        "x": -15,
+        "y": 2
       },
       "size": {
-        "height": 51,
-        "width": 170
+        "height": 1,
+        "units": "slots",
+        "width": 5
+      }
+    },
+    {
+      "content": "First, set the Pin that the neopixel is on.\nIt's that \"val\" node just below, that is hooked to 'p'.\nOn my CircuitPlayGround Express, I used pin 8.\nOn several of the M0 and M4's from Adafruit, you probably want the special pin 5",
+      "id": "rJvlCgTPi",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 15
+      }
+    },
+    {
+      "content": "Start with \"True\" hooked to \"color-order\" 1-red, and 2-green.\nThen upload.\nThe first 3 pixels will show 3 colors.\nRecord the colors that actually show. Mine showed as green-red-blue.\nHook \"True\" to the first color that showed (for me, that's 1-green),\nand also hook \"True\" to the second color that showed (for me, that's 2-red).\nMine shows as Green Red Blue, so 1-green, 2-red.\nUpload with that, should show as Red Green Blue when you get it right.",
+      "id": "HyVVAlTDi",
+      "position": {
+        "units": "slots",
+        "x": -6,
+        "y": 0
+      },
+      "size": {
+        "height": 2,
+        "units": "slots",
+        "width": 13
       }
     }
   ],
-  "description": "Light up the first 3 pixels in Red, Green, Blue order.\nNearest the Arduino should be Red, then Green, then Blue.\nThis should help you decode the right RGB code to use (e.g. GRB, etc).",
+  "description": "Helps you decode the right RGB code to use (e.g. GRB, etc), by lighting up 3 colors. Clone this node, and follow the instructions.",
   "links": [
     {
       "id": "B1HeQfmlN",
@@ -144,17 +174,6 @@
       }
     },
     {
-      "id": "BJ9o2pnQV",
-      "input": {
-        "nodeId": "H1-5efDjQN",
-        "pinKey": "r1l4IZw8QV"
-      },
-      "output": {
-        "nodeId": "rJ5lMPoXE",
-        "pinKey": "VAL"
-      }
-    },
-    {
       "id": "BJvgQGXgE",
       "input": {
         "nodeId": "BJ9sDPVk4",
@@ -196,17 +215,6 @@
       "output": {
         "nodeId": "Hylcs84yE",
         "pinKey": "o-dev"
-      }
-    },
-    {
-      "id": "ByushpnX4",
-      "input": {
-        "nodeId": "H1-5efDjQN",
-        "pinKey": "rkiG-vIXN"
-      },
-      "output": {
-        "nodeId": "rJ5lMPoXE",
-        "pinKey": "VAL"
       }
     },
     {
@@ -395,6 +403,28 @@
         "nodeId": "rJEgqwNJN",
         "pinKey": "B1x2RV3eZ"
       }
+    },
+    {
+      "id": "ry2T1W6ws",
+      "input": {
+        "nodeId": "H1-5efDjQN",
+        "pinKey": "rkiG-vIXN"
+      },
+      "output": {
+        "nodeId": "rJ5lMPoXE",
+        "pinKey": "VAL"
+      }
+    },
+    {
+      "id": "HJ1AkWaPo",
+      "input": {
+        "nodeId": "H1-5efDjQN",
+        "pinKey": "r1l4IZw8QV"
+      },
+      "output": {
+        "nodeId": "rJ5lMPoXE",
+        "pinKey": "VAL"
+      }
     }
   ],
   "nodes": [
@@ -405,8 +435,9 @@
       "id": "B1gqgzws74",
       "label": "RGB",
       "position": {
-        "x": -34,
-        "y": 306
+        "units": "slots",
+        "x": -1,
+        "y": 3
       },
       "type": "xod/core/constant-number"
     },
@@ -416,8 +447,9 @@
       },
       "id": "BJ9sDPVk4",
       "position": {
-        "x": -306,
-        "y": 714
+        "units": "slots",
+        "x": -9,
+        "y": 7
       },
       "type": "xod/core/delay"
     },
@@ -425,16 +457,18 @@
       "id": "BkH3LwEkE",
       "label": "neopixel",
       "position": {
-        "x": -340,
-        "y": 918
+        "units": "slots",
+        "x": -10,
+        "y": 9
       },
       "type": "xod/patch-nodes/to-bus"
     },
     {
       "id": "H1-5efDjQN",
       "position": {
-        "x": -272,
-        "y": 306
+        "units": "slots",
+        "x": -8,
+        "y": 3
       },
       "type": "@/color-order"
     },
@@ -444,8 +478,9 @@
       },
       "id": "HkLNDD4JV",
       "position": {
-        "x": -34,
-        "y": 816
+        "units": "slots",
+        "x": -1,
+        "y": 8
       },
       "type": "xod/core/constant-number"
     },
@@ -455,8 +490,9 @@
       },
       "id": "HkhqBvVyV",
       "position": {
-        "x": -340,
-        "y": 306
+        "units": "slots",
+        "x": -10,
+        "y": 3
       },
       "type": "xod/core/constant-number"
     },
@@ -468,16 +504,18 @@
       },
       "id": "HyNcu8EyV",
       "position": {
-        "x": -340,
-        "y": 408
+        "units": "slots",
+        "x": -10,
+        "y": 4
       },
       "type": "@/adafruitneopixel"
     },
     {
       "id": "Hylcs84yE",
       "position": {
-        "x": -340,
-        "y": 510
+        "units": "slots",
+        "x": -10,
+        "y": 5
       },
       "type": "@/begin"
     },
@@ -487,8 +525,9 @@
       },
       "id": "SJfiBPN1E",
       "position": {
-        "x": -306,
-        "y": 204
+        "units": "slots",
+        "x": -9,
+        "y": 2
       },
       "type": "xod/core/constant-number"
     },
@@ -498,8 +537,9 @@
       },
       "id": "Sk4EwwNyE",
       "position": {
-        "x": -34,
-        "y": 714
+        "units": "slots",
+        "x": -1,
+        "y": 7
       },
       "type": "xod/core/constant-number"
     },
@@ -507,8 +547,9 @@
       "id": "Skw1oW7eN",
       "label": "SETUP",
       "position": {
-        "x": 170,
-        "y": 510
+        "units": "slots",
+        "x": 5,
+        "y": 5
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -518,8 +559,9 @@
       },
       "id": "SyumvP4yN",
       "position": {
-        "x": -34,
-        "y": 612
+        "units": "slots",
+        "x": -1,
+        "y": 6
       },
       "type": "xod/core/constant-number"
     },
@@ -531,8 +573,9 @@
       "id": "r1WBAvEkV",
       "label": "brightness",
       "position": {
-        "x": 68,
-        "y": 510
+        "units": "slots",
+        "x": 2,
+        "y": 5
       },
       "type": "xod/core/constant-number"
     },
@@ -542,16 +585,18 @@
       },
       "id": "r1hGwvNyN",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 816
+        "y": 8
       },
       "type": "@/set-pixel-color-rgb"
     },
     {
       "id": "r1yRPDNkE",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 918
+        "y": 9
       },
       "type": "@/show"
     },
@@ -561,8 +606,9 @@
       },
       "id": "rJ5lMPoXE",
       "position": {
-        "x": -204,
-        "y": 204
+        "units": "slots",
+        "x": -6,
+        "y": 2
       },
       "type": "xod/core/constant-boolean"
     },
@@ -572,16 +618,18 @@
       },
       "id": "rJEgqwNJN",
       "position": {
-        "x": -204,
-        "y": 612
+        "units": "slots",
+        "x": -6,
+        "y": 6
       },
       "type": "xod/core/constant-number"
     },
     {
       "id": "rkWgQzmxE",
       "position": {
-        "x": -340,
-        "y": 612
+        "units": "slots",
+        "x": -10,
+        "y": 6
       },
       "type": "@/show"
     },
@@ -591,8 +639,9 @@
       },
       "id": "ry-08PEJ4",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 612
+        "y": 6
       },
       "type": "@/set-pixel-color-rgb"
     },
@@ -600,8 +649,9 @@
       "id": "ryCW9-Qe4",
       "label": "SETUP",
       "position": {
-        "x": -306,
-        "y": 918
+        "units": "slots",
+        "x": -9,
+        "y": 9
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -609,8 +659,9 @@
       "id": "ryJJDD4yV",
       "label": "neopixel",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 510
+        "y": 5
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -620,8 +671,9 @@
       },
       "id": "rymGDPNk4",
       "position": {
+        "units": "slots",
         "x": 0,
-        "y": 714
+        "y": 7
       },
       "type": "@/set-pixel-color-rgb"
     }

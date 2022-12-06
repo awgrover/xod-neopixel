@@ -4,10 +4,10 @@ struct State {
     float green;
     float blue;
 };
+using Type = State*;
 
 {{ GENERATED_CODE }}
 
-using Type = *State;
 
 void evaluate(Context ctx) {
     // if we are called, something is dirty, and we might as well write them all
